@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.7.0/tachyons.css">
-		<title>Dreamforce 2018 is the best</title>
-	</head>
-	<body>
-		<div class="vh-100 w-100 flex justify-center">
-			<div class="flex flex-column items-center justify-center">
-				<h2 class="fw4 green">Panorama Trail!</h2>
-				<p class="silver ma0">Built in Heroku</p>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.7.0/tachyons.css">
+        <title>Dreamforce 2018 is the best</title>
+    </head>
+    <body>
+        <div class="vh-100 w-100 flex justify-center">
+            <div class="flex flex-column items-center justify-center">
+                <h2 class="fw4 green">Panorama Trail!</h2>
+                <p class="silver ma0">Built in Heroku</p>
                 <p>ベースとなるオペレーティングシステム (OS) はDebian、もしくはDebianをベースに開発されたUbuntuである。</p>
-                <p>初期はRubyによるウェブアプリケーションフレームワークRuby on Railsのみのサポートであったが、Java、Node.js、Scala、Clojure、Python、PHP、Goなど複数のプログラミング言語をサポートするようになった。</p>
+                <p>初期はRubyによるウェブアプリケーションフレームワークRuby on Railsのみのサポートであったが、</p>
+                <p>Java、Node.js、Scala、Clojure、Python、PHP、Goなど複数のプログラミング言語をサポートするようになった。</p>
                 <p>データベースはPostgreSQL、MySQL、Cloudant、Couchbase Server、MongoDB、Redisをサポートしている。</p>
-                <p>Heroku DNS Serverで実行されるアプリケーションは、FQDNが「アプリケーション名.herokuapp.com」となる。</p>              
-				<div class="pt5">
-					<span id="env" class="white pv1 ph2 br-pill bg-light-blue"></span>
-				</div>
-			</div>
-		</div>
-
-		<script>
-			var env = "<%= env %>";
-			document.getElementById("env").innerHTML = env;
-		</script>
-	</body>
+                <p>Heroku DNS Serverで実行されるアプリケーションは、FQDNが「アプリケーション名.herokuapp.com」となる。</p>
+                <div class="pt5">
+                    <span id="env" class="white pv1 ph2 br-pill bg-light-blue"></span>
+                </div>
+            </div>
+        </div>
+        <script>
+            var env = "<%= env %>";
+            document.getElementById("env").innerHTML = env;
+        </script>
+    </body>
 </html>
